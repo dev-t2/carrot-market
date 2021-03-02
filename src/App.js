@@ -1,7 +1,9 @@
 import { memo } from 'react';
 
+import User from './components/User';
+
 const App = () => {
-  return <div>Hello!!!</div>;
+  return <User />;
 };
 
 export default memo(App);
