@@ -5,5 +5,5 @@
 - [MySQL](https://dev.mysql.com)
 - [NestJS](https://nestjs.com)
   - [Setup](https://docs.nestjs.com/first-steps)
-  - [esModuleInterop](https://www.typescriptlang.org/tsconfig#esModuleInterop)
+  - [ES Module Interop](https://www.typescriptlang.org/tsconfig#esModuleInterop)
   - [Admin](https://nestjs-admin.com)
