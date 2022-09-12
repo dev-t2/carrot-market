@@ -8,6 +8,4 @@
   - [ES Module Interop](https://www.typescriptlang.org/tsconfig#esModuleInterop)
   - [Print Width](https://prettier.io/docs/en/options.html#print-width)
   - [Hot Reload](https://docs.nestjs.com/recipes/hot-reload)
-  - [Controllers](https://docs.nestjs.com/controllers)
-  - [Providers](https://docs.nestjs.com/providers)
   - [Admin](https://nestjs-admin.com)
