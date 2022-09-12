@@ -5,6 +5,7 @@
 - [MySQL](https://dev.mysql.com)
 - [NestJS](https://nestjs.com)
   - [Setup](https://docs.nestjs.com/first-steps)
+  - [Hot Reload](https://docs.nestjs.com/recipes/hot-reload)
   - [Admin](https://nestjs-admin.com)
 - [TSConfig](https://www.typescriptlang.org/tsconfig)
   - [ES Module Interop](https://www.typescriptlang.org/tsconfig#esModuleInterop)
