@@ -6,7 +6,18 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [ConfigModule.forRoot(), LoggerModule.forRoot()],
+  imports: [
+    ConfigModule.forRoot(),
+    LoggerModule.forRoot({
+      pinoHttp: {
+        level: process.env.NODE_ENV !== 'production' ? 'debug' : 'info',
+        transport:
+          process.env.NODE_ENV !== 'production'
+            ? { target: 'pino-pretty', options: { levelFirst: true, singleLine: true } }
+            : undefined,
+      },
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
