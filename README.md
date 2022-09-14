@@ -13,6 +13,7 @@
   - [Modules](https://docs.nestjs.com/modules)
   - [Controllers](https://docs.nestjs.com/controllers)
   - [Providers](https://docs.nestjs.com/providers)
+  - [Open API](https://docs.nestjs.com/openapi/introduction)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
 - [MySQL](https://dev.mysql.com)
 - [NestJS Admin](https://nestjs-admin.com)
