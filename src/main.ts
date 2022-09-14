@@ -3,6 +3,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { Logger } from 'nestjs-pino';
 
 import { AppModule } from './app.module';
+import { UndefinedToNullInterceptor } from './common/interceptor';
 
 declare const module: any;
 
@@ -22,6 +23,8 @@ async function bootstrap() {
 
   app.useLogger(app.get(Logger));
   app.flushLogs();
+
+  app.useGlobalInterceptors(new UndefinedToNullInterceptor());
 
   await app.listen(3000);
 
