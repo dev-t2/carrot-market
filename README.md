@@ -11,5 +11,5 @@
   - [Pino](https://github.com/iamolegga/nestjs-pino)
     - [Pretty](https://github.com/pinojs/pino-pretty)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
-  - [Admin](https://nestjs-admin.com)
-  - [Next.js](https://github.com/kyle-mccarthy/nest-next)
+- [NestJS Admin](https://nestjs-admin.com)
+- [Nest Next](https://github.com/kyle-mccarthy/nest-next)
