@@ -3,7 +3,7 @@ import { Body, Controller, Get, Post, Res, Req } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { PostUsersDto } from './dto';
 
-@Controller('users')
+@Controller('api/users')
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
@@ -13,8 +13,8 @@ export class UsersController {
   }
 
   @Post()
-  postUsers(@Body() postUsersDto: PostUsersDto) {
-    this.usersService.postUsers(postUsersDto.email, postUsersDto.nickname, postUsersDto.password);
+  postUsers(@Body() body: PostUsersDto) {
+    this.usersService.postUsers(body.email, body.nickname, body.password);
   }
 
   @Post('login')
