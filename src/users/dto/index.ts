@@ -1,1 +1,1 @@
-export { PostUsersDto } from './post-users.dto';
+export { SignUpDto } from './sign-up.dto';
