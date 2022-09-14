@@ -5,6 +5,9 @@ import { LoggerModule } from 'nestjs-pino';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
+import { WorkspacesModule } from './workspaces/workspaces.module';
+import { ChannelsModule } from './channels/channels.module';
+import { DmsModule } from './dms/dms.module';
 
 @Module({
   imports: [
@@ -20,6 +23,9 @@ import { UsersModule } from './users/users.module';
       },
     }),
     UsersModule,
+    WorkspacesModule,
+    ChannelsModule,
+    DmsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
