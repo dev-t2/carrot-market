@@ -9,7 +9,7 @@
   - [Hot Reload](https://docs.nestjs.com/recipes/hot-reload)
   - [Pino](https://github.com/iamolegga/nestjs-pino)
     - [Pretty](https://github.com/pinojs/pino-pretty)
-  - [CLI Command Reference](https://docs.nestjs.com/cli/usages)
+  - [CLI](https://docs.nestjs.com/cli/usages)
   - [Modules](https://docs.nestjs.com/modules)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
 - [MySQL](https://dev.mysql.com)
