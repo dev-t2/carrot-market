@@ -18,6 +18,7 @@
     - [Operations](https://docs.nestjs.com/openapi/operations)
     - [Security](https://docs.nestjs.com/openapi/security)
   - [Custom Decorators](https://docs.nestjs.com/custom-decorators)
+  - [Interceptors](https://docs.nestjs.com/interceptor)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
 - [MySQL](https://dev.mysql.com)
 - [NestJS Admin](https://nestjs-admin.com)
