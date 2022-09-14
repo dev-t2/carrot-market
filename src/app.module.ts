@@ -10,6 +10,7 @@ import { AppService } from './app.service';
     ConfigModule.forRoot(),
     LoggerModule.forRoot({
       pinoHttp: {
+        name: process.env.NODE_ENV ?? 'development',
         level: process.env.NODE_ENV !== 'production' ? 'debug' : 'info',
         transport:
           process.env.NODE_ENV !== 'production'
