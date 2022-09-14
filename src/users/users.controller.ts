@@ -9,7 +9,7 @@ import { User } from 'src/common/decorator';
 @ApiTags('USER')
 @Controller('api/users')
 export class UsersController {
-  constructor(private usersService: UsersService) {}
+  constructor(private readonly usersService: UsersService) {}
 
   @ApiOperation({ summary: '내 정보 조회' })
   @ApiResponse({ type: UserDto })
