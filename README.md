@@ -2,7 +2,6 @@
 
 - [Node.js](https://nodejs.org/ko)
   - [NPM](https://www.npmjs.com)
-- [MySQL](https://dev.mysql.com)
 - [NestJS](https://nestjs.com)
   - [Setup](https://docs.nestjs.com/first-steps)
     - [ES Module Interop](https://www.typescriptlang.org/tsconfig#esModuleInterop)
@@ -11,5 +10,6 @@
   - [Pino](https://github.com/iamolegga/nestjs-pino)
     - [Pretty](https://github.com/pinojs/pino-pretty)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
+- [MySQL](https://dev.mysql.com)
 - [NestJS Admin](https://nestjs-admin.com)
 - [Nest Next](https://github.com/kyle-mccarthy/nest-next)
