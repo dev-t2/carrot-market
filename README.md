@@ -16,6 +16,7 @@
   - [Open API](https://docs.nestjs.com/openapi/introduction)
     - [Types and Parameters](https://docs.nestjs.com/openapi/types-and-parameters)
     - [Operations](https://docs.nestjs.com/openapi/operations)
+    - [Security](https://docs.nestjs.com/openapi/security)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
 - [MySQL](https://dev.mysql.com)
 - [NestJS Admin](https://nestjs-admin.com)
