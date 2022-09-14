@@ -22,7 +22,7 @@
     - [RxJS](https://rxjs.dev)
       - [Pipe](https://rxjs.dev/api/index/function/pipe)
       - [Map](https://rxjs.dev/api/index/function/map)
-    - [MySQL](https://dev.mysql.com)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
+- [MySQL](https://dev.mysql.com)
 - [NestJS Admin](https://nestjs-admin.com)
 - [Nest Next](https://github.com/kyle-mccarthy/nest-next)
