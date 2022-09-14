@@ -12,6 +12,7 @@
   - [CLI](https://docs.nestjs.com/cli/usages)
   - [Modules](https://docs.nestjs.com/modules)
   - [Controllers](https://docs.nestjs.com/controllers)
+  - [Providers](https://docs.nestjs.com/providers)
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
 - [MySQL](https://dev.mysql.com)
 - [NestJS Admin](https://nestjs-admin.com)
