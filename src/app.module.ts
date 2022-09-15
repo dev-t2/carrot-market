@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { LoggerModule } from 'nestjs-pino';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -21,6 +22,18 @@ import { DmsModule } from './dms/dms.module';
             ? { target: 'pino-pretty', options: { levelFirst: true, singleLine: true } }
             : undefined,
       },
+    }),
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'localhost',
+      port: 3306,
+      username: 'root',
+      password: 'password1234',
+      database: 'slack',
+      entities: [],
+      synchronize: process.env.NODE_ENV !== 'production',
+      logging: process.env.NODE_ENV !== 'production',
+      keepConnectionAlive: true,
     }),
     UsersModule,
     WorkspacesModule,
