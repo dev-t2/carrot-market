@@ -1,24 +1,5 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { PickType } from '@nestjs/swagger';
 
-export class SignUpDto {
-  @ApiProperty({
-    required: true,
-    description: '이메일',
-    example: 'oo_ri@naver.com',
-  })
-  email: string;
+import { User } from 'src/schemas/user.schema';
 
-  @ApiProperty({
-    required: true,
-    description: '닉네임',
-    example: '티투',
-  })
-  nickname: string;
-
-  @ApiProperty({
-    required: true,
-    description: '비밀번호',
-    example: '[비밀번호 입력]',
-  })
-  password: string;
-}
+export class SignUpDto extends PickType(User, ['email', 'nickname', 'password'] as const) {}

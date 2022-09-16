@@ -17,6 +17,7 @@
     - [Types and Parameters](https://docs.nestjs.com/openapi/types-and-parameters)
     - [Operations](https://docs.nestjs.com/openapi/operations)
     - [Security](https://docs.nestjs.com/openapi/security)
+    - [Mapped Types](https://docs.nestjs.com/openapi/mapped-types)
   - [Custom Decorators](https://docs.nestjs.com/custom-decorators)
   - [Interceptors](https://docs.nestjs.com/interceptor)
     - [Pipe](https://rxjs.dev/api/index/function/pipe)

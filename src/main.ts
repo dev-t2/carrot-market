@@ -1,3 +1,4 @@
+import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { Logger } from 'nestjs-pino';
@@ -23,6 +24,8 @@ async function bootstrap() {
 
   app.useLogger(app.get(Logger));
   app.flushLogs();
+
+  app.useGlobalPipes(new ValidationPipe());
 
   app.useGlobalInterceptors(new UndefinedToNullInterceptor());
 

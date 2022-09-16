@@ -1,8 +1,13 @@
 import { Injectable } from '@nestjs/common';
 
+import { UsersRepository } from './users.repository';
+import { SignUpDto } from './dto';
+
 @Injectable()
 export class UsersService {
-  signUp(email: string, nickname: string, password: string) {
-    console.log({ email, nickname, password });
+  constructor(private readonly usersRepository: UsersRepository) {}
+
+  signUp(body: SignUpDto) {
+    console.log(body);
   }
 }
