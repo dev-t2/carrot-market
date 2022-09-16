@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { LoggerModule } from 'nestjs-pino';
-import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { UsersModule } from './users/users.module';
 import { WorkspacesModule } from './workspaces/workspaces.module';
@@ -26,25 +25,6 @@ import { AppService } from './app.service';
 
         return {
           pinoHttp: { name, level, transport },
-        };
-      },
-    }),
-    TypeOrmModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: (configService: ConfigService) => {
-        const isDevelopment = configService.get('NODE_ENV') !== 'production';
-
-        return {
-          type: 'mysql',
-          host: 'localhost',
-          port: 3306,
-          username: configService.get('DB_USERNAME'),
-          password: configService.get('DB_PASSWORD'),
-          database: configService.get('DB_DATABASE'),
-          entities: [],
-          synchronize: isDevelopment,
-          keepConnectionAlive: isDevelopment,
-          logging: isDevelopment,
         };
       },
     }),
