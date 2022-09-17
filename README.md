@@ -25,6 +25,7 @@
   - [Configuration](https://docs.nestjs.com/techniques/configuration)
   - [Mongo](https://docs.nestjs.com/techniques/mongodb)
     - [Schema Types](https://mongoosejs.com/docs/schematypes.html)
+    - [Model API](https://mongoosejs.com/docs/api/model.html)
   - [Pipes](https://docs.nestjs.com/pipes)
 - [NestJS Admin](https://nestjs-admin.com)
 - [Nest Next](https://github.com/kyle-mccarthy/nest-next)
