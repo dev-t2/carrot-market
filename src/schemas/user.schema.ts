@@ -21,7 +21,7 @@ export class User {
   @IsString()
   @IsNotEmpty()
   @Prop({ required: true, unique: true, length: 10 })
-  nickname: number;
+  nickname: string;
 
   @ApiProperty({ required: true, description: '비밀번호' })
   @IsString()

@@ -7,7 +7,10 @@ import { SignUpDto } from './users.dto';
 export class UsersService {
   constructor(private readonly usersRepository: UsersRepository) {}
 
-  signUp({ email, nickname, password }: SignUpDto) {
-    console.log({ email, nickname, password });
+  async signUp({ email, nickname, password }: SignUpDto) {
+    console.log(password);
+
+    await this.usersRepository.existsEmail(email);
+    await this.usersRepository.existsNickname(nickname);
   }
 }

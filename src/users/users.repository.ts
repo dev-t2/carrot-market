@@ -8,7 +8,19 @@ import { User, UserDocument } from 'src/schemas/user.schema';
 export class UsersRepository {
   constructor(@InjectModel(User.name) private readonly userModel: Model<UserDocument>) {}
 
-  // async findUser(): Promise<> {
+  async existsEmail(email: string) {
+    const user = await this.userModel.exists({ email });
 
-  // }
+    console.log(user);
+
+    return !!user;
+  }
+
+  async existsNickname(nickname: string) {
+    const user = await this.userModel.exists({ nickname });
+
+    console.log(user);
+
+    return !!user;
+  }
 }
