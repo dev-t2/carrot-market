@@ -3,7 +3,7 @@ import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 import { User } from 'src/common/decorator';
 import { UsersService } from './users.service';
-import { SignUpDto, UserDto } from './dto';
+import { SignUpDto, UserDto } from './users.dto';
 
 @ApiTags('USER')
 @Controller('api/users')
