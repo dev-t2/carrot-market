@@ -10,7 +10,7 @@ import { SignUpDto, UserDto } from './dto';
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
-  @ApiOperation({ summary: '회원가입' })
+  @ApiOperation({ summary: '회원 가입' })
   @Post()
   signUp(@Body() body: SignUpDto) {
     this.usersService.signUp(body);

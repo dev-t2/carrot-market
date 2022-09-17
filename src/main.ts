@@ -1,5 +1,5 @@
-import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { Logger } from 'nestjs-pino';
 
@@ -29,7 +29,7 @@ async function bootstrap() {
 
   app.useGlobalInterceptors(new UndefinedToNullInterceptor());
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT);
 
   if (module.hot) {
     module.hot.accept();
