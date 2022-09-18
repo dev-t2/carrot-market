@@ -5,6 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
 
 import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 import { WorkspacesModule } from './workspaces/workspaces.module';
 import { ChannelsModule } from './channels/channels.module';
 import { DmsModule } from './dms/dms.module';
@@ -37,6 +38,7 @@ import { DmsModule } from './dms/dms.module';
       },
     }),
     UsersModule,
+    AuthModule,
     WorkspacesModule,
     ChannelsModule,
     DmsModule,
