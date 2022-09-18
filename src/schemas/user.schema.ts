@@ -7,7 +7,7 @@ import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
 export class User {
   @ApiProperty({ required: true, description: '유저 아이디' })
   @IsNotEmpty()
-  @Prop({ unique: true })
+  @Prop()
   id: Types.ObjectId;
 
   @ApiProperty({ required: true, description: '이메일' })

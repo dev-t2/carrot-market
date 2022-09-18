@@ -21,7 +21,7 @@ export class UsersRepository {
     return !!user;
   }
 
-  async signUp({ email, nickname, password }: SignUpDto) {
-    await this.userModel.create({ email, nickname, password });
+  async signUp(signUpDto: SignUpDto) {
+    await this.userModel.create(signUpDto);
   }
 }
