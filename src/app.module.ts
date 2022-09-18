@@ -1,7 +1,8 @@
-import { Module } from '@nestjs/common';
+import { Module, NestModule } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { LoggerModule } from 'nestjs-pino';
 import { MongooseModule } from '@nestjs/mongoose';
+import mongoose from 'mongoose';
 
 import { UsersModule } from './users/users.module';
 import { WorkspacesModule } from './workspaces/workspaces.module';
@@ -41,4 +42,12 @@ import { DmsModule } from './dms/dms.module';
     DmsModule,
   ],
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  constructor(private readonly configService: ConfigService) {}
+
+  configure() {
+    const isDevelopment = this.configService.get('NODE_ENV') !== 'production';
+
+    mongoose.set('debug', isDevelopment);
+  }
+}
