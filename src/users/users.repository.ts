@@ -12,15 +12,11 @@ export class UsersRepository {
   async existsEmail(email: string) {
     const user = await this.userModel.exists({ email });
 
-    console.log(user);
-
     return !!user;
   }
 
   async existsNickname(nickname: string) {
     const user = await this.userModel.exists({ nickname });
-
-    console.log(user);
 
     return !!user;
   }

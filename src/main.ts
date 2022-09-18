@@ -5,6 +5,7 @@ import { Logger } from 'nestjs-pino';
 
 import { AppModule } from './app.module';
 import { UndefinedToNullInterceptor } from './common/interceptor';
+import { HttpExceptionFilter } from './common/filter';
 
 declare const module: any;
 
@@ -28,6 +29,8 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   app.useGlobalInterceptors(new UndefinedToNullInterceptor());
+
+  app.useGlobalFilters(new HttpExceptionFilter());
 
   await app.listen(process.env.PORT);
 

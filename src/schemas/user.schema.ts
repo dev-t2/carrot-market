@@ -8,7 +8,7 @@ export class User {
   @ApiProperty({ required: true, description: '유저 아이디' })
   @IsString()
   @IsNotEmpty()
-  @Prop({ required: true, unique: true })
+  @Prop({ unique: true })
   id: Types.ObjectId;
 
   @ApiProperty({ required: true, description: '이메일' })
