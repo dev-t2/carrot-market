@@ -29,5 +29,6 @@
   - [Encryption and Hashing](https://docs.nestjs.com/security/encryption-and-hashing)
   - [Exception Filters](https://docs.nestjs.com/exception-filters)
   - [Validation](https://docs.nestjs.com/techniques/validation)
+  - [Request Lifecycle](https://docs.nestjs.com/faq/request-lifecycle)
 - [NestJS Admin](https://nestjs-admin.com)
 - [Nest Next](https://github.com/kyle-mccarthy/nest-next)
