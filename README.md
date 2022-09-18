@@ -6,7 +6,6 @@
   - [Setup](https://docs.nestjs.com/first-steps)
     - [ES Module Interop](https://www.typescriptlang.org/tsconfig#esModuleInterop)
     - [Print Width](https://prettier.io/docs/en/options.html#print-width)
-  - [Hot Reload](https://docs.nestjs.com/recipes/hot-reload)
   - [Pino](https://github.com/iamolegga/nestjs-pino)
     - [Pretty](https://github.com/pinojs/pino-pretty)
   - [CLI](https://docs.nestjs.com/cli/usages)
