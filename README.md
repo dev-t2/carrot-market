@@ -27,6 +27,7 @@
     - [Mongoose API](https://mongoosejs.com/docs/api/mongoose.html)
     - [Schema Types](https://mongoosejs.com/docs/schematypes.html)
     - [Model API](https://mongoosejs.com/docs/api/model.html)
+  - [Encryption and Hashing](https://docs.nestjs.com/security/encryption-and-hashing)
   - [Pipes](https://docs.nestjs.com/pipes)
 - [NestJS Admin](https://nestjs-admin.com)
 - [Nest Next](https://github.com/kyle-mccarthy/nest-next)
