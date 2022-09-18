@@ -29,6 +29,6 @@
     - [Model API](https://mongoosejs.com/docs/api/model.html)
   - [Encryption and Hashing](https://docs.nestjs.com/security/encryption-and-hashing)
   - [Exception Filters](https://docs.nestjs.com/exception-filters)
-  - [Pipes](https://docs.nestjs.com/pipes)
+  - [Validation](https://docs.nestjs.com/techniques/validation)
 - [NestJS Admin](https://nestjs-admin.com)
 - [Nest Next](https://github.com/kyle-mccarthy/nest-next)

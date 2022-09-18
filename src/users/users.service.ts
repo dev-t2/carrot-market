@@ -1,4 +1,4 @@
-import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
+import { Injectable, UnauthorizedException } from '@nestjs/common';
 import bcrypt from 'bcrypt';
 
 import { UsersRepository } from './users.repository';
@@ -12,13 +12,13 @@ export class UsersService {
     const isExistsEmail = await this.usersRepository.existsEmail(email);
 
     if (isExistsEmail) {
-      throw new HttpException('이미 존재하는 이메일입니다.', HttpStatus.BAD_REQUEST);
+      throw new UnauthorizedException('이미 존재하는 이메일입니다.');
     }
 
     const isExistsNickname = await this.usersRepository.existsNickname(nickname);
 
     if (isExistsNickname) {
-      throw new HttpException('이미 존재하는 닉네임입니다.', HttpStatus.BAD_REQUEST);
+      throw new UnauthorizedException('이미 존재하는 닉네임입니다.');
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);

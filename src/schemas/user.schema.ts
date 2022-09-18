@@ -6,7 +6,6 @@ import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
 @Schema({ timestamps: true })
 export class User {
   @ApiProperty({ required: true, description: '유저 아이디' })
-  @IsString()
   @IsNotEmpty()
   @Prop({ unique: true })
   id: Types.ObjectId;
