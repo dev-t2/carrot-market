@@ -30,6 +30,7 @@
   - [Exception Filters](https://docs.nestjs.com/exception-filters)
   - [Pipes](https://docs.nestjs.com/pipes)
     - [Validation](https://docs.nestjs.com/techniques/validation)
+  - [Guards](https://docs.nestjs.com/guards)
   - [Request Lifecycle](https://docs.nestjs.com/faq/request-lifecycle)
 - [NestJS Admin](https://nestjs-admin.com)
 - [Nest Next](https://github.com/kyle-mccarthy/nest-next)

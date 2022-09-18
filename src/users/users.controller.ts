@@ -16,17 +16,17 @@ export class UsersController {
     await this.usersService.signUp(body);
   }
 
-  @ApiOperation({ summary: '내 정보 조회' })
-  @ApiResponse({ type: UserDto })
-  @Get()
-  getUser(@User() user) {
-    return user;
-  }
-
   @ApiOperation({ summary: '로그인' })
   @ApiResponse({ type: UserDto })
   @Post('login')
   signIn(@User() user) {
+    return user;
+  }
+
+  @ApiOperation({ summary: '내 정보 조회' })
+  @ApiResponse({ type: UserDto })
+  @Get()
+  getUser(@User() user) {
     return user;
   }
 
