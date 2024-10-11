@@ -7,7 +7,7 @@ export default function Heading() {
 
       <h2 className="text-xl font-bold">웹 기본</h2>
 
-      <h5 className="text-2xl font-bold">구성 요소</h5>
+      <h3 className="text-2xl font-bold">구성 요소</h3>
     </div>
   );
 }
