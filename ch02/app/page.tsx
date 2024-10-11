@@ -1,10 +1,14 @@
-import { ItemList } from '@/components';
+import { Heading, ItemList } from '@/components';
 
 export default function Home() {
+  const initialItems = ['HTML', 'CSS', 'JavaScript'];
+
   return (
     <div>
       <main className="flex flex-col p-4">
-        <ItemList />
+        <Heading />
+
+        <ItemList initialItems={initialItems} />
       </main>
     </div>
   );

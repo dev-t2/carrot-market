@@ -4,5 +4,5 @@ export default function Welcome({
   name: string;
   age?: number;
 }>) {
-  return <h4>Hello, {name}</h4>;
+  return <h2>Hello, {name}</h2>;
 }
