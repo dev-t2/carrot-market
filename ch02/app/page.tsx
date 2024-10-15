@@ -1,6 +1,6 @@
 import { Heading, ItemList } from '@/components';
 
-export default function Home() {
+export default function HomePage() {
   const initialItems = ['HTML', 'CSS', 'JavaScript'];
 
   return (
